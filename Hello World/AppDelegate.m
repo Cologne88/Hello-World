@@ -22,7 +22,7 @@
     [self.window makeKeyAndVisible];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(90, 80, 140, 40)];
-    label.text = @"Hello World";
+    label.text = @"Hello 瓜皮";
     label.textAlignment = NSTextAlignmentCenter;
     label.backgroundColor = [UIColor grayColor];
     [self.window addSubview:label];
