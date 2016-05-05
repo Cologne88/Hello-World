@@ -17,6 +17,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(90, 80, 140, 40)];
+    label.text = @"Hello World";
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor grayColor];
+    [self.window addSubview:label];
+    
+    [label release];
+    
     return YES;
 }
 
